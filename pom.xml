@@ -25,6 +25,7 @@
         <java.version>11</java.version>
         <mybatis-generator.version>1.4.0</mybatis-generator.version>
         <redis.version>3.7.1</redis.version>
+        <redisson.version>3.16.7</redisson.version>
         <apache-commons.version>3.12.0</apache-commons.version>
         <mysql.version>8.0.25</mysql.version>
         <druid.version>1.2.7</druid.version>
@@ -94,6 +95,12 @@
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
                 <version>${redis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
 
             <!--数据库-->
