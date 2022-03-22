@@ -19,6 +19,7 @@
 
     <modules>
         <module>JDBC</module>
+        <module>Redis</module>
     </modules>
 
     <properties>
