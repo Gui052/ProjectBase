@@ -20,6 +20,7 @@
     <modules>
         <module>JDBC</module>
         <module>Redis</module>
+        <module>Schedule</module>
     </modules>
 
     <properties>
@@ -38,6 +39,7 @@
         <hutool.version>5.7.21</hutool.version>
         <feign.version>3.1.0</feign.version>
         <lombock.version>1.18.22</lombock.version>
+        <xxljob.version>2.3.0</xxljob.version>
     </properties>
 
     <dependencies>
@@ -136,6 +138,13 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
                 <version>${feign.version}</version>
+            </dependency>
+
+            <!--xxl-job-->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxljob.version}</version>
             </dependency>
 
         </dependencies>
