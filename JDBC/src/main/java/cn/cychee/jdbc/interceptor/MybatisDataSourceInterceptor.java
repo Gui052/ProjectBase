@@ -60,7 +60,7 @@ public class MybatisDataSourceInterceptor implements Interceptor {
                 }
             }
         } else {
-            //非事务管理的用主库
+            //事务管理的用主库
             DBContextHolder.master();
         }
         return invocation.proceed();
