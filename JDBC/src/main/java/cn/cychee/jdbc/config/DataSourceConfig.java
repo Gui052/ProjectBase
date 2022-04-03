@@ -1,15 +1,16 @@
 package cn.cychee.jdbc.config;
 
 import cn.cychee.jdbc.enumerate.DBTypeEnum;
+import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 @Configuration
 public class DataSourceConfig {
@@ -17,19 +18,28 @@ public class DataSourceConfig {
     @Bean
     @ConfigurationProperties("spring.datasource.master")
     public DataSource masterDataSource() {
-        return DataSourceBuilder.create().build();
+        return getDataSource();
     }
 
     @Bean
     @ConfigurationProperties("spring.datasource.slave1")
     public DataSource slaveOneDataSource() {
-        return DataSourceBuilder.create().build();
+        return getDataSource();
     }
 
     @Bean
     @ConfigurationProperties("spring.datasource.slave2")
     public DataSource slaveTwoDataSource() {
-        return DataSourceBuilder.create().build();
+        return getDataSource();
+    }
+
+    private DataSource getDataSource() {
+        DruidDataSource dataSource = new DruidDataSource();
+        Properties properties = new Properties();
+        properties.put("socketTimeout", "3000");
+        properties.put("connectTimeout", "1200");
+        dataSource.setConnectProperties(properties);
+        return dataSource;
     }
 
     @Bean
