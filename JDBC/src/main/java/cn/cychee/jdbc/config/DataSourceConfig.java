@@ -1,6 +1,6 @@
-package cn.cychee.config;
+package cn.cychee.jdbc.config;
 
-import cn.cychee.enumerate.DBTypeEnum;
+import cn.cychee.jdbc.enumerate.DBTypeEnum;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;

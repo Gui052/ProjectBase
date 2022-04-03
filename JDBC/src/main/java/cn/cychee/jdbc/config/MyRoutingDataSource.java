@@ -1,4 +1,4 @@
-package cn.cychee.config;
+package cn.cychee.jdbc.config;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.lang.Nullable;

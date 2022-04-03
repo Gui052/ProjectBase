@@ -1,6 +1,6 @@
-package cn.cychee.config;
+package cn.cychee.jdbc.config;
 
-import cn.cychee.enumerate.DBTypeEnum;
+import cn.cychee.jdbc.enumerate.DBTypeEnum;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -50,10 +50,8 @@ public class DBContextHolder {
         }
         if (index == 0) {
             set(DBTypeEnum.SLAVE_ONE);
-            log.info("切换到slaveOne");
         }else {
             set(DBTypeEnum.SLAVE_TWO);
-            log.info("切换到slaveTwo");
         }
     }
 

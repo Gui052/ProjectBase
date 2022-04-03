@@ -1,3 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.cychee.config.DataSourceConfig,cn.cychee.config.MyBatisConfig,\
-  cn.cychee.interceptor.MybatisDataSourceInterceptor
+  cn.cychee.jdbc.config.DataSourceConfig,cn.cychee.jdbc.config.MyBatisConfig

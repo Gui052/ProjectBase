@@ -1,6 +1,6 @@
-package cn.cychee.annotation;
+package cn.cychee.jdbc.annotation;
 
-import cn.cychee.config.DBContextHolder;
+import cn.cychee.jdbc.config.DBContextHolder;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
