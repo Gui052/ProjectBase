@@ -39,7 +39,6 @@ public class DBContextHolder {
 
     public static void master() {
         set(DBTypeEnum.MASTER);
-        log.info("切换到master");
     }
 
     public static void slave() {
