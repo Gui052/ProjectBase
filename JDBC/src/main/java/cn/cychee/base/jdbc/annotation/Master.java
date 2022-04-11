@@ -1,4 +1,4 @@
-package cn.cychee.jdbc.annotation;
+package cn.cychee.base.jdbc.annotation;
 
 /**
  * 强制走主库

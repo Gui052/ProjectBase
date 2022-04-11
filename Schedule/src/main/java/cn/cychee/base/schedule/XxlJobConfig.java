@@ -1,4 +1,4 @@
-package cn.cychee.schedule;
+package cn.cychee.base.schedule;
 
 import com.xxl.job.core.executor.impl.XxlJobSpringExecutor;
 import org.slf4j.Logger;

@@ -1,6 +1,6 @@
-package cn.cychee.jdbc.annotation;
+package cn.cychee.base.jdbc.annotation;
 
-import cn.cychee.jdbc.config.DBContextHolder;
+import cn.cychee.base.jdbc.config.DBContextHolder;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class DataSourceAop {
-    @Pointcut("@annotation(Master)")
+    @Pointcut("@annotation(cn.cychee.base.jdbc.annotation.Master)")
     public void masterPointcut() {
     }
 

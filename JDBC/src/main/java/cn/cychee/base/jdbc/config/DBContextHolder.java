@@ -1,6 +1,6 @@
-package cn.cychee.jdbc.config;
+package cn.cychee.base.jdbc.config;
 
-import cn.cychee.jdbc.enumerate.DBTypeEnum;
+import cn.cychee.base.jdbc.enumerate.DBTypeEnum;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.atomic.AtomicInteger;

@@ -1,4 +1,4 @@
-package cn.cychee.jdbc.config;
+package cn.cychee.base.jdbc.config;
 
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;

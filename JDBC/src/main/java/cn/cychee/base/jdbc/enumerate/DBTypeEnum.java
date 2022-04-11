@@ -1,4 +1,4 @@
-package cn.cychee.jdbc.enumerate;
+package cn.cychee.base.jdbc.enumerate;
 
 /**
  * 枚举数据源类型

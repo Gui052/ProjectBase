@@ -1,6 +1,6 @@
-package cn.cychee.jdbc.config;
+package cn.cychee.base.jdbc.config;
 
-import cn.cychee.jdbc.enumerate.DBTypeEnum;
+import cn.cychee.base.jdbc.enumerate.DBTypeEnum;
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;

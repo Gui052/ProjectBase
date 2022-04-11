@@ -1,6 +1,6 @@
-package cn.cychee.jdbc.interceptor;
+package cn.cychee.base.jdbc.interceptor;
 
-import cn.cychee.jdbc.config.DBContextHolder;
+import cn.cychee.base.jdbc.config.DBContextHolder;
 import org.apache.ibatis.cache.CacheKey;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.executor.keygen.SelectKeyGenerator;

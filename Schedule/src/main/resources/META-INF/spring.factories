@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  cn.cychee.schedule.XxlJobConfig
+  cn.cychee.base.schedule.XxlJobConfig
